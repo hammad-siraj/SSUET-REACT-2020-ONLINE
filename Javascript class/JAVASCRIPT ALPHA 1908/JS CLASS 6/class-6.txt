@@ -1,0 +1,13 @@
+
+regex
+e.preventDefault();
+form validation
+
+filter 
+map
+find
+reduce
+spread operator
+
+
+

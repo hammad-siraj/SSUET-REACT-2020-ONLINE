@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //for(intializer ; condtion ; increment/decrement)
+    //   var n = +prompt("type a number");
+    //   console.log(n)
+    
+    // print a table
+    //   for(var i =1 ; i<=10 ; i++){
+    //      document.write(i*n)
+    //      document.write("<br/>")
+    
+    //   }
+  
+var fact=1;
+
+//5*1 =5 ; 5*2 =10 ; 10*3 =30 ;30 *4 =120;
+        // for(var i=1;i<=n;i++){
+        //    fact = fact*i;
+
+        // }
+
+console.log(fact)
+
+
+
+
+
+//while(condition)
+// while(i<=n){
+//     fact=fact*i;
+//     i++;
+
+
+// }
+console.log(fact);
+
+
+
+
+
+while(false){
+console.log("while loop")
+}
+
+do{
+console.log("do while loop")
+}while(false);
+
+
+
+//if else and else if
+
+if(false) console.log("if check")
+
+else console.log("else check")
+
+
+var password= "hello@";
+
+if(password.includes("@")){
+console.log("you can login")
+}
+else{
+    console.log("you can't login")
+}
+
+var email = "st@gmail.com"
+
+if(email.length>15){
+ console.log("success 1")
+}
+
+else if (email.includes("@")) {
+  console.log("sucess 2")
+}
+
+else{
+    console.log("sorry you enter wrong email address")
+}
+
+
+
+//logical operator
+//&& , or ,not
+//&& both condition should be true
+// or one condition might be false
+//not if true then it could be false or vise versa.
+
+
+var userName = "hammad";
+
+if(userName.length>8 || userName.includes("h")){
+console.log("user name is valid")
+}
+
+
+var bool = false;
+
+if(!bool){
+console.log("bool can be access")
+}
+
+console.log(bool)
+
+//Break and Continue  
+//=== strict 
+// loose
+var scores =[30,40,50,0,70];
+
+for(var i =0;i<scores.length;i++){
+  
+  
+  if(scores[i]==50){  // scores[i]=50
+    continue
+  }
+  // continue : skips the current index where the condition is true;
+  
+  
+   if(scores[i]===0){
+    console.log("failed")
+    
+    break
+     }
+   
+   
+   console.log(scores[i])
+}
+
+
+
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        html
+    </p>
+    <p>
+        css
+    </p>
+    <p>
+        javascript
+    </p>
+    <p>
+        react
+    </p>
+
+ 
+    <h1 class="main">DOM</h1>
+
+    <a id="link">google</a>
+    
+    
+    <div class="one">
+        <p class="try">
+            html
+        </p>
+        <p>
+            css
+        </p>
+        <p>
+            javascript
+        </p>
+        <p>
+            react
+        </p>
+    </div>
+
+    <div class="one">
+     <p> hello </p>
+      <p>hello 2</p>
+
+
+    </div> 
+
+    <div class="two">
+        <p> hello </p>
+         <p>hello 2</p>
+   </div>
+
+   <p class="para">HEllo  <span style="display: none;">Hide me</span></p>
+</body>
+
+<script>
+
+var paras3 = document.querySelector('.para');
+
+paras3.innerText += ' hammad';
+paras3.innerHTML +='  <h1>hammad 2</h1>'
+
+// console.log(paras3.innerHTML);
+// console.log(paras3.textContent);
+// console.log(paras3.innerText)
+
+
+// var para1 = document.querySelector('p');
+var allParas = document.querySelectorAll('.one p');
+// console.log(allParas)
+
+ allParas.forEach((para)=>console.log(para.classList))
+
+//  var linkId = document.getElementById("link");
+// console.log(linkId);
+
+
+// var classSelector =document.getElementsByClassName('one');
+// console.log(classSelector)
+
+
+// var tagSelector = document.getElementsByTagName('p');
+// console.log(tagSelector)
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

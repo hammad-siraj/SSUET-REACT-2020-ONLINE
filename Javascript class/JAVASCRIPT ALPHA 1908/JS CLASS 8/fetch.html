@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <form>
+<input type="text" name="user"/>
+<button type="submit" onclick="findGithubUser()">Find user</button type>
+
+</form>
+<h3>NAME:</h3>
+
+<script>
+    var frm = document.querySelector('form');
+
+    frm.addEventListener('submit',(e)=>{
+              e.preventDefault()
+              frm.user.value=""
+    })
+
+    let baseUrl = 'https://api.github.com/users/'
+    
+    var findGithubUser = async ()=>{
+           var h = document.querySelector('h3')
+          var res = await fetch(`${baseUrl}${frm.user.value}`)
+            var jsonRes = await res.json();
+            console.log(jsonRes)
+       
+             if(jsonRes){
+               var followers = jsonRes.name;
+               h.innerText += followers;
+         
+         
+             }
+
+   
+    }
+
+//    findGithubUser();
+    </script>
+</body>
+</html>

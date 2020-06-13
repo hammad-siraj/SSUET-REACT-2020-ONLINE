@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+.average {
+font-size: larger;
+color: red;
+}
+.good{
+font-size: larger;
+color: green;
+}
+
+</style>
+
+</head>
+<body>
+
+<a href="#"  class="googleLink googleLink2"> go to Google</a>
+ 
+<p >salman average</p>
+<p >arslan average</p>
+<p >basit good</p>
+<p >zoma good</p> 
+
+<section class="books">
+
+<p>dont make me think</p>
+<p>lean startup</p>
+<p>rich dad poor dad</p>
+
+</section>
+
+
+</body>
+
+
+
+<script>
+
+var section = document.getElementsByTagName('p');
+
+Array.from(section).forEach((p)=>{
+    p.classList.add('good')
+})
+
+
+// var books = document.querySelectorAll('.books');
+
+
+// books.forEach((book)=>console.log(book.previousElementSibling))
+
+//            var Link = document.querySelector('a');
+//            console.log(Link.getAttribute('class'))
+        
+//            Link.setAttribute("href","#2");        
+
+//         Link.setAttribute("style","color:yellow");
+
+// console.log("anchor tag class list",Link.classList)
+// Link.classList.add("newClass")
+// Link.classList.remove("googleLink");
+// Link.classList.toggle("newClass");
+
+
+var paras = document.querySelectorAll('p');
+paras.forEach((p)=>{
+
+if(p.textContent.includes('average')) p.classList.add('average')
+
+else p.classList.add('good')
+
+})
+
+
+
+
+        
+    </script>
+
+
+
+</html>

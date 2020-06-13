@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //object
+
+      var greetUser = {
+        name: "student 1",
+        age: "xyz",
+        subject: ["math", "sci"],
+        login() {
+          console.log("hello", this.name);
+        },
+      };
+
+      var greetUser2 = {
+        name: "student 2",
+        age: "xyz",
+        subject: ["math", "sci"],
+        login() {
+          console.log("hello", this.name);
+        },
+      };
+
+      greetUser2.login();
+      //cobstructor function
+      var greetUserConst = function (name) {
+        this.name = name;
+        this.login = function () {
+          console.log("hello", name);
+        };
+      };
+      var student1 = new greetUserConst("hammad");
+      student1.login();
+
+      var student2 = new greetUserConst("arsalan");
+      student2.login();
+      // var st2 = {
+      //   name: "student 2",
+      //   age: "xyz",
+      //   subject: ["math", "sci"],
+      //   login() {
+      //     console.log("login");
+      //   },
+      // };
+
+      // var st2 = {
+      //   name: "student 2",
+      //   class: "7",
+      //   age: 14,
+      //   login() {
+      //     console.log("st login");
+      //   },
+
+      //   logout() {
+      //     console.log("logout");
+      //   },
+      // };
+
+      // console.log(st2.login());
+      // console.log(st2.logout());
+
+      class xyz {
+        constructor(name, age) {
+          console.log("constructor called");
+          this.name = name; //undefined
+          this.age = age; //undefined
+        }
+        login() {
+          // console.log("class this", this);
+          console.log("hello yr kaisa ho ? ", this.name);
+        }
+      }
+
+      var obj = new xyz("hammad", "xyz");
+      obj.login();
+
+      var obj2 = new xyz();
+      obj2.login();
+
+      // console.log("window", this);
+
+      class student {
+        constructor(name, age, grade) {
+          this.name = name;
+          this.age = age;
+          this.grade = grade;
+        }
+
+        login() {
+          console.log(`${this.name} is login`);
+        }
+
+        showResult() {
+          console.log(`${this.name} ${this.grade ? "passed" : "failed"}`);
+        }
+      }
+
+      var st1 = new student("arsalan", 20, false);
+      var st2 = new student("salman", 10, true);
+      //   console.log(st1.name, st1.age);
+      //   console.log(st2.name, st2.age);
+
+      st1.login();
+      st2.login();
+
+      st1.showResult();
+      st2.showResult();
+      // let bool = false;
+
+      // bool ? "hammad" : console.log("Yeh to ni hoga");
+
+      // if (bool) {
+      //   return "hammad";
+      // } else {
+      //   console.log("yeh to ni hoga");
+      // }
+      // //create empty object {}
+      // //call the constructor
+      // //bind this to that class
+
+      class Admin extends student {
+        constructor(name, age, grade, fees) {
+          super(name, age, grade);
+          this.fees = fees;
+          this.score = 50;
+        }
+
+        feesPaid() {
+          console.log(`${this.fees ? "Paid" : "please pay the fees"}`);
+        }
+        mathScore() {
+          this.score++;
+          console.log("score", this.score);
+          return this;
+        }
+      }
+      ///chaining methods
+      var admin = new Admin("basit", 20, false, false);
+      admin.showResult();
+      admin.login();
+      admin.mathScore().mathScore().mathScore().mathScore();
+
+      // admin.showResult();
+      // admin.feesPaid();
+      // admin.mathScore().mathScore().mathScore();
+
+      //call back function
+
+      var Func1 = function (cb) {
+        let value = 50;
+        let value2 = 100;
+        cb(value, value2); // 50 ,100
+      };
+
+      var callBackFunc = function (num1, num2) {
+        console.log(num1 + num2);
+      };
+
+      Func1(callBackFunc);
+
+      let people = ["arsalan", "sami", "khawar"];
+
+      people.forEach((val, index) => {
+        ///3 //2 //1
+        console.log(`hello : ${index}- ${val}`);
+      });
+
+      function sum(...params) {
+        console.log(params);
+      }
+
+      sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    </script>
+  </body>
+</html>

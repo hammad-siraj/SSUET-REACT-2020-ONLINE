@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+    
+    //OBJECT LITERALS
+
+//collection of ordered data
+    var arr =[2,3,5,68,95];
+
+    console.log(arr[1]);
+
+//collection of unordered data
+    
+
+// let student = {
+// name:"xyz",
+// class:10,
+// subject:["phy","comp","math"],
+//  }
+
+//  console.log(student.class,student.name,student)
+
+
+
+    var obj ={
+      name:"hammad",
+      class:"bscs",
+    }
+
+console.log(obj.name);
+
+var key = "name";
+console.log(obj["name"],obj.name)
+
+// var key = 'class';
+
+// console.log(obj[key])
+    
+
+var article1 = {
+   artile:"dont make me think",
+   likes:20,
+   comments:["amazing topic","great","amazing"],
+   authorName:"steve krug",
+   publish:function(){
+       console.log("publish article",this)
+   },
+   unpublished:()=>{
+       console.log("unpublished article",this)
+   }
+   
+}
+
+// console.log(this)
+
+ article1.unpublished();
+// article1.publish();
+
+
+// var func1 = (a,b,c,d,e,f,g)=>{console.log("hello",a,a)}
+// func1(1,3,45,7,)
+
+// var func2 = function(a){
+//  return a;
+// }
+
+// var func2 = ()=> a
+
+// console.log(func2(2))
+
+// var func1 = function (){
+//     console.log("hello")
+// }
+
+
+// article1.comments.forEach((comment)=>{
+//    console.log(comment)
+// })
+
+
+
+// console.log("student data")
+
+var studentData ={
+name:"user 1",
+class:10,
+college:"xyz",
+age:20,
+
+}
+
+ console.log(studentData)   
+//   console.log(studentData.class)   
+
+
+
+//  //for in loop
+
+
+
+
+
+//  for(var props in studentData){
+//     console.log(studentData[props])
+//  }
+    
+// console.log(this);
+
+
+
+
+
+
+
+var womenCollection =[
+    {
+        name:"junaid jamshed",
+        size:"all"
+    }
+    ,{
+     name:"bonanza",
+     size:"all"
+    }
+    ,{
+       name:"sana safinaz",
+       size:"all"
+    }
+    
+    ];
+
+console.log("women collections 2019")
+
+womenCollection.forEach((item)=>{console.log(item.name,item.size)})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// womenCollection.forEach((coll)=>{
+//      console.log("name",coll.name)
+//      console.log("size",coll.size)
+// })
+
+
+// var num = 23;
+
+// var num2 = num;
+
+
+
+// num=25;
+
+// console.log(num2)
+
+// var obj = {
+//     name:"hammad"
+// }
+
+
+// var obj2=obj;
+
+// obj.name="changed";
+
+// console.log(obj2.name)
+
+
+// var arr1 =[2,4,56,6];
+
+// var arr2=arr1.slice(0);
+
+
+// arr1.push(8);
+
+
+// console.log(arr1,arr2)
+
+    </script>
+    
+</body>
+</html>

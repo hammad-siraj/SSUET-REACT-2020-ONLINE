@@ -1,0 +1,13 @@
+Objects:
+In JS objects have properties and methods to do.
+Object literals.
+Methods in object.
+this ? 
+Objects in Array
+primitive and non-primitive.
+
+primitive:
+number 
+string
+bool
+

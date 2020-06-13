@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //imperative Approach
+    var arr = [1, 2, 3, 45];
+
+    // for(){
+    //     //sum += arr[i];
+    // }
+
+    //declartive approach
+
+    // arr.reduce((a,b)=>a+b)
+
+    // var userReq = prompt("enter your desired fruit");
+    // var fruits = ["apple", "kiwi", "orange"];
+    // var isExist = false;
+
+    // for (var i = 0; i < fruits.length; i++) {
+    //   if (fruits[i] === userReq) isExist = true;
+    // }
+
+    // if (isExist) document.write("found");
+    // else document.write("not found");
+
+    //declartive approach
+
+    // let func = (params)=>"hello"+params
+
+    // var fruit = arr.find(ft => (ft === userReq ? (isExist = true) : null));
+
+    // var res =fruits.find(ft=>ft===userReq?"found":"not found")
+    // console.log(res)
+
+    //spread operator
+
+    function add(...params) {
+      console.log(params[2]);
+    }
+
+    add(1, 2, 4, 5, 100);
+
+    var arr1 = [1, 2, 3, 4, 5, 5];
+    var arr2 = [24, 56, ...arr1, 234];
+    console.log(arr2);
+   
+     var newArr = [...arr2];
+
+    // var arr3 = [...arr1];
+  </script>
+</html>

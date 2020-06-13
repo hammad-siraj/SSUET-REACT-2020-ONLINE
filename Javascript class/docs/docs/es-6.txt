@@ -1,0 +1,46 @@
+1:component 
+2:declarative approach
+3:learn once write anywhere
+
+declarative approach.
+var arr =[1,2,3,4,5];
+
+var sum =  arr.reduce((a,b)=>a+b)
+
+
+imperative approach;
+var arr = [1,2,3,4,5];
+var sum;
+for(i= 1;i<arr.length;i++){
+sum += arr[i];
+}
+
+
+
+
+
+-------------ES-6----------
+
+1:let , const , var
+
+2: template strings
+
+
+
+3:Fat arrow function
+
+
+4:function with default parameter
+
+
+5:object literals
+
+
+
+6:destructuring
+
+
+7:classes
+8:Array helper functions(foreach, map, filter, reduce,  reduce)
+9:promises
+10:spread operator 

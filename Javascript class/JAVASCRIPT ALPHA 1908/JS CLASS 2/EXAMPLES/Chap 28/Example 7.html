@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+var ask = prompt("Write a decimal number");
+var ask2 = +prompt("in which property do you want to change ? integer or float (1/2)");
+
+if (ask2 === 1 ) {
+var change = parseInt(ask);
+alert (change)
+var ask3 = +prompt("Your number successfully change in to integer. For confirmation Please add any number to it");
+var change2 = change + ask3;
+alert(change2);
+alert(change2 + "congrats Your input has been changed");
+
+}
+ else if (ask2 === 2 ) {
+var change = parseFloat(ask);
+alert (change)
+var ask3 = +prompt("Your number successfully change in to float. For confirmation Please add any number to it");
+var change2 = change + ask3;
+alert(change2);
+alert(change2 + "congrats Your input has been changed");
+
+}
+
+
+
+
+    </script>
+</body>
+</html>

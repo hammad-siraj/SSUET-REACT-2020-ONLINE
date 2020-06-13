@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //promises
+
+      let assignmentUpdate = true; // me na abi usko koi update ni di.
+
+      let assignmentKaKyaHowa = new Promise((resolve, reject) => {
+        if (assignmentUpdate) {
+          var assignment = {
+            name: "arsalan", ///yeh mera assignment ha jo me apna dost ko du ga.
+          };
+          resolve(assignment);
+        }
+        // ==> agr assignmentUpdate false hoga to idhr ajai ga.
+        var err = new Error("ni diya bhai");
+        reject(err);
+      });
+
+      // assignmentKaKyaHowa is ki type promise hogi
+
+      // .then
+      //.catch
+      //  arr obj function ===  object
+      // console.log(typeof assignmentKaKyaHowa);
+
+      // let arr =[1,2,3,4]
+      // arr.
+
+      assignmentKaKyaHowa
+        .then((val) => console.log("resolve", val))
+        .catch((err) => console.log("reject", err));
+
+      // assignmentKaKyaHowa
+      //   .then(data => console.log(data))
+      //   .catch(err => console.log(err));
+    </script>
+  </body>
+</html>

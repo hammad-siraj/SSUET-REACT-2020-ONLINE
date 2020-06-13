@@ -1,0 +1,64 @@
+
+Definition:
+
+The reduce() method is used to apply a function to each element in the array to reduce the array to a single value.
+
+Syntax:
+
+let result = arr.reduce(callback);
+
+// Optionally, you can specify an initial value
+
+let result = arr.reduce(callback, initValue);
+
+why callback ?
+
+The function to execute on each element in the array
+
+
+Arguments :
+
+ACCUMULATOR: accumulates all of the values that is returned from callback.
+
+VAL:current value being processed.
+
+INDEX:the current index being processed.
+
+ARR: current array being processed.
+
+
+
+Example:
+
+
+let data = [
+    {
+      mobile: 'Iphone',
+      price: 250,
+    },
+    {
+      mobile: 'One plus',
+      price: 200,
+    },
+    {
+      mobile: 'Samsung',
+      price: 150,
+    },
+    {
+      mobile: 'Huawei',
+      price:100,
+    }
+  ]
+
+
+
+let price = data.reduce((acc,ele)=>{
+    return  ele.mobile === "Iphone" ? acc :acc + ele.price;
+
+},0)
+
+
+console.log(population)
+
+
+

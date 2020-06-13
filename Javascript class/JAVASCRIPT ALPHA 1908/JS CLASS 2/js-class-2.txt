@@ -1,0 +1,60 @@
+                      JAVASCRIPT DATA TYPES :
+1=>String
+2=>Number
+3=>Boolen
+4=>null
+5=>undefined
+6=>objects
+7=>symbols 
+
+Strings: Examples
+what is string ?
+1=>string 
+2=>string concatenation
+3=>getting characters
+4=>string length
+5=>string methods=>
+toLowerCase(),
+toUppercase(),
+indexOf("character"),
+lastIndexOf("character"),
+slice(),
+substr(),
+replace("character to replace","target character")
+old string concatenation
+template string,
+creating html string
+
+Number:
+operators: +, - , / , * ,  ** , %
+order Of Operation :B-I-D-M-A-S-E
+post operator
+pre operator
+
+
+Arrays:
+what is array ?
+array method :
+join(),
+concat(),
+indexOf(),
+push()
+pop()
+stack
+primitive and non-primitive
+
+Undefined,null
+
+Boolean 
+
+compairsion operator
+
+loose campairsion and strict compairsion
+
+type conversion:
+Number
+String
+Boolean
+
+
+

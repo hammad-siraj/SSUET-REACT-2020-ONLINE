@@ -1,0 +1,119 @@
+What is Destructuring?
+
+Destructuring simply implies breaking down a complex structure into simpler parts
+
+
+example : 
+
+const stjsdjsjkkjadfjkwqdnwk ={
+name:"student 1",
+fatherName:"student father name",
+class:"matric"
+
+}
+
+
+let {name,class} =st;
+
+cl(name);
+
+
+
+
+
+
+
+const {name,fatherName,class} =st;
+name,fatherName,class
+
+
+
+
+
+const { name,fatherName,class} =st;
+cl(nam)
+
+const {name,FatherName,class } =st;
+
+console.log(name,fatherName,class )
+
+const  {name,fatherName,class } = st;
+
+console.log(name ,fatherName,class);
+old way of accessing these objects ?
+
+console.log(st.name);
+console.log(st.fatherName);
+
+new way of es6 :
+
+const {name,fatherName,class}= st ;
+console.log(name);
+console.log(fatherName);
+
+//assign new variables.
+ const obj={x,y,z}
+const {x,y,z,a=10} =obj;
+console.log(obj);
+
+.we can assign different variable names to destructuring objects....
+
+
+.we can use nested destructuring...
+
+let arr1 = [1,2,3,4,5];
+
+console.log(arr1[0]); //1
+const [ one,,,,five] = arr1;
+console.log( one,two,three);
+
+ternary operator :
+
+ if it is true ? <h1>hello</h1>: <h1> bye </h1> 
+
+string literals:
+
+var a =10;
+console.log(`the value of a is ${a} xyz`)
+console.log("the value of a is " + a+ "xyz" );
+
+console.log( ` the value of a is ${a} xyz` );
+
+
+
+
+true ? run :not run
+
+
+Array Destructuring :
+
+
+let arr =["karachi","lahore"];
+
+const [city1,city2] = arr;
+
+Note:variable is mapped to the corresponding item at the same index.
+
+let arr =["karachi","lahore"];
+
+let [city1="islamabad",city2,city3,city4="isl"]=arr;
+
+
+. We can also use spread operator in destructuring.
+
+.clonning of array...
+
+
+const rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 
+'indigo', 'violet'];
+
+// Cloning with array destructuring and spread operator
+
+const [...rainbowClone] = rainbow;
+
+
+
+
+
+
+

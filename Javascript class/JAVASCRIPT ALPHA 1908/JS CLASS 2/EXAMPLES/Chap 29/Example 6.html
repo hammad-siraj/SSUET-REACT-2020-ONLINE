@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var ask = prompt("Write a number");
+    alert("Ypur input is now in the form of string");
+    var ask2 = prompt("Do you want to change your input to a number? (y/n)");
+    if (ask2 === "y") {
+        ask = Number(ask);
+        var anotherQuestion = +prompt("Your number has been converted to a number. \n Please add any number to it?");
+        alert(ask + anotherQuestion);
+    }
+    else if (ask2 !== "y") {
+        alert("Thanks Good bye!")
+    }
+    </script>
+</body>
+</html>

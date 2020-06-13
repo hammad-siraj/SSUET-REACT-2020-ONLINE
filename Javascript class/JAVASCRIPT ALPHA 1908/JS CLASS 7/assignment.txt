@@ -1,0 +1,5 @@
+make a form with complete validation.
+make todo list (example : https://www.w3schools.com/howto/howto_js_todolist.asp
+)
+
+TEST OF JS ON COMING SATURDAY. ES-6 ,DOM , ARRAY METHODS ETC.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<ul>
+    <li>go to schoold</li>
+    <li>go to gym</li>
+    <li>go to home</li>
+
+</ul>
+<p> here is my content </p>
+
+<button> click me ! </button>
+
+
+
+<body>
+    <script>
+
+var p = document.querySelector('p');
+p.addEventListener('copy',()=>console.log("some one is stealing my content"))
+
+var btn = document.querySelector('button');
+
+var uList =document.querySelector('ul');
+
+uList.addEventListener('click',(e)=>{
+ e.target.style ="display:none"
+ 
+ })
+
+
+var list = document.querySelectorAll('li');
+
+
+
+
+btn.addEventListener('click',()=>{
+
+    uList.innerHTML += '<li>something new</li>'
+
+
+})
+
+
+
+ document.addEventListener('mouseover',()=>console.log("hello"))
+
+
+    </script>
+    
+</body>
+</html>

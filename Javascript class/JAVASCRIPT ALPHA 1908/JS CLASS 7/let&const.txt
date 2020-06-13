@@ -1,0 +1,29 @@
+SCOPE:
+Scope essentially means where these variables are available for use. 
+
+what is block scope ?
+"A block is chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block."
+
+ 
+
+
+var:variables can be re-declared and updated.
+var declarations are globally scoped or function/locally scoped.
+
+let:
+let is block scoped.
+let can be updated but not re-declared.
+let can only be updated in its scope.
+let can not be re-declared in its scope.
+
+
+CONST: 
+const declarations are block scoped.
+
+const cannot be updated or re-declared.
+
+
+
+
+
+

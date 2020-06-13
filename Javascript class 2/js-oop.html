@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var st1 ={
+      //     name:"student 1",
+      //     name2:"student 2",
+      //     class:"matric",
+      //     age:14,
+      //     login(){
+      //         console.log("st login")
+      //     }
+      // }
+      // var st2 ={
+      //     name:"student 2",
+      //     class:"7",
+      //     age:14,
+      //     login(){
+      //         console.log("st login")
+      //     }
+      // }
+
+      // console.log(st1.age)
+
+      class student {
+        constructor(name, age, grade) {
+          this.name = name;
+          this.age = age;
+          this.grade = grade;
+        }
+        login() {
+          console.log(`${this.name} is login`);
+        }
+
+        showResult() {
+          console.log(`${this.name} ${this.grade ? "passed" : "failed"}`);
+        }
+      }
+
+      var st1 = new student("arsalan", 20, true);
+      var st2 = new student("salman", 10, false);
+      //   console.log(st1.name, st1.age);
+      //   console.log(st2.name, st2.age);
+
+      st1.login();
+      st2.login();
+
+      st1.showResult();
+      st2.showResult();
+      //create empty object {}
+      //call the constructor
+      //bind this to that class
+
+      class Admin extends student {
+        constructor(name, age, grade, fees) {
+          super(name, age, grade);
+          this.fees = fees;
+          this.score = 50;
+        }
+
+        feesPaid() {
+          console.log(`${this.fees ? "Paid" : "please pay the fees"}`);
+        }
+        mathScore() {
+          this.score++;
+          console.log(this.score);
+          return this;
+        }
+      }
+
+      var admin = new Admin("basit", 20, false, false);
+      admin.showResult();
+      admin.feesPaid();
+      admin
+        .mathScore()
+        .mathScore()
+        .mathScore();
+
+
+
+
+
+
+
+
+        
+    </script>
+  </body>
+</html>

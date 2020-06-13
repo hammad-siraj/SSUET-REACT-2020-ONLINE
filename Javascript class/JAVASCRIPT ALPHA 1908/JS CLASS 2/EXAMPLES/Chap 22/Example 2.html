@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var city = prompt("Your city name is?");
+    alert("Your city is: " + city);
+    var ask = prompt("Do you want to slice (Y/N)");
+    ask = ask.toLowerCase();
+    if (ask === "y") {
+        city = city.slice(0 , 1);
+        alert(city);
+    }
+    else if (ask === "n") {
+        alert("Thanks");
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container
+
+
+https://brolik.com/blog/when-to-use-flexbox/
+
+flex-row item takes the maximum height from container.
+
+
+flex-container,
+flex-direction,flex-wrap
+main-axis,cross axis
+align-item,justify-content

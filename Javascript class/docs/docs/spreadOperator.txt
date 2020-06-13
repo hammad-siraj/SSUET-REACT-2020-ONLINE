@@ -1,0 +1,94 @@
+                         SPREAD OPERATOR: 
+
+   What is spread operator ?
+
+.. It allows an iterable to expand in places where 0+ arguments are  expected.
+
+.example :
+
+
+
+
+function abc(a,b,c,d){
+
+}
+
+abc(1,2,3,4,5)
+
+
+function(...params){
+
+}
+
+function f1(param1,param2,pararm3){}
+f1(1,2,3,4)
+
+.. The spread syntax expands our array elements and inputs each element in our new array individually 
+
+.example :
+without spread operator :
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var arr2 =[1,2,3,arr,4]
+
+
+
+// 123[1234567]4
+123456789
+console.table(arr2);
+console.table(arr);
+
+with spread operator :
+
+var arr2 =[1,2,3,...arr,4]
+
+console.table(arr2);
+console.table(arr);
+[1,2,4,1,2,3,5,6,7,4]
+
+example 2:
+
+javascript has built-in math function which can be used as follow;
+
+..without spread operator :
+var arr = [2, 4, 8, 6, 0];
+
+function max(arr) {
+  return Math.max.apply(arr,null)
+}
+Math.max(1,2,4,5,6,8)
+console.log(max(arr));
+
+
+..with spread operator :
+
+var arr = [2, 4, 8, 6, 0];
+var max = Math.max(...arr);
+
+console.log(max);
+
+
+how to copy array ?
+
+
+old syntax :
+
+var arr1 =[1,2,3];
+var arr2 =arr1.splice();
+var arr2 = [...arr1]
+console.log(arr2);
+
+in javascript array are reference type so if we copy arr1 into arr2 so they are not copied because array are reference type and any changes in arr2 will also reflected in arr1..
+
+with the help of spread operator :
+
+var arr1 =[1,2,3];
+
+var arr2 =[...arr1];
+
+this will make a copied array instead of refrencing now you have new array 
+now you can easily changes in arr2 and that will not be reflected in arr1;
+
+The spread operator can also be used to combine multiple arrays into one array containing all array elements as shown below.
+
+

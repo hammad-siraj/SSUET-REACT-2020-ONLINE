@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+var a =12; //initialize
+var a; //declare
+var a =null;
+
+//strings "uhfiuwufhiefui"
+//numbers  123
+//boolean  true/false
+//null empty value 
+//undefined  not defined yet
+//objects arrays ,objects
+
+
+var str ="xyz";
+var num =123;
+var bool = true;
+var obj ={};
+var arr =[];
+var empty = null;
+var b ;
+
+var newStr = str;
+
+ newStr = "new";
+
+console.log(newStr)
+console.log(str)
+
+
+var arr1 = [1,2,3,4,5,6];
+
+var newArr = arr1;
+
+ newArr[0]=0;
+
+ console.log(newArr)
+ console.log(arr1)
+
+
+//primitive  
+//string,number,bool,null,undefined
+
+
+//non-primitive
+//object , array
+
+
+
+var str2 = "hello string";
+console.log(typeof str2)
+
+//string concatenation :
+
+
+var str3 = "hello string 2";
+
+
+var newString = str2   + " space " + str3;
+
+//string template 
+
+  newString = `hello iam a new string ${100+1} ${str3}`
+
+console.log(newString)
+
+//get character from a string;
+
+var stringIndex = str3[0];
+
+console.log(stringIndex)
+
+//length of a string
+
+var stringLen = str3.length;
+
+console.log(stringLen)
+
+
+//uppercase and lower case
+
+
+let upperCase = str3.toUpperCase();
+
+console.log(upperCase.toLowerCase())
+
+let index = "pakistana";
+
+console.log(index.indexOf("k"));
+
+console.log(index.lastIndexOf("a"));
+
+var sliceStr = index.slice(0,3);
+console.log(sliceStr)
+
+console.log(index.replace("p","P"));
+
+
+
+
+console.log("NUMBERS")
+
+//NUMBERS
+
+//+,-,*,/,%,**
+
+var num1 = 3;
+
+var num2 = 5;
+
+var result = num1 * (num1+num2) + num1**2 ; 
+
+console.log(result);
+
+
+
+result = num1;
+
+
+
+
+
+//post operator and pre operator
+
+
+
+var newNum = num1; //3
+num1 =newNum++;
+
+console.log(num1)
+
+
+console.log("ARRAY")
+
+//Array
+
+//array is a collection of ordered data
+
+let arr4 =["abcd",1,true,{},null];
+
+//join
+
+let copyArr =arr4.join("")
+console.log(typeof copyArr)
+
+
+//concat
+
+var arr5 =[1,2,3,4];
+
+var concatArr = arr4.concat(arr5)
+console.log(concatArr)
+
+console.log(arr5.length)
+
+var arrLength =arr5.push(6)
+
+console.log(arrLength)
+
+arr5.pop();
+
+console.log(arr5)
+
+
+let arr6 = arr5.slice(0);
+arr6.push(100)
+console.log(arr5)
+console.log(arr6)
+
+ //1st arg=> where to start , 2nd=> how many elements,changes you want to do;
+ 
+ arr5.splice(2,1,100)
+
+ console.log(arr5)
+
+console.log("COMPAIRISION OPERATOR")
+
+//compairison operator
+//1=> ==
+//2=>  < less than
+//3 => > greater than
+//4 => <= less than equal to
+//5 => >= greater than equal to
+// 6 => != not equal
+
+
+console.log(5!=6)
+
+
+
+var nums = "12";
+var nums2 =12;
+
+console.log(nums===nums2)
+
+console.log(+(nums))
+console.log(String(nums2))
+
+
+//initializer // condition // increment
+
+for (var i=0;i<=10;i++){
+    console.log(4*i);
+}
+
+</script>
+
+</html>

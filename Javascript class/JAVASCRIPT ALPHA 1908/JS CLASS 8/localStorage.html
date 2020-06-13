@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var SetItem = localStorage.setItem("name", "hammad");
+      let getItem = localStorage.getItem("name");
+
+      localStorage.setItem("name", "arsalan");
+      var getItem2 = localStorage.getItem("name");
+
+      //   var deleteItem = localStorage.removeItem("name");
+      var clearItem = localStorage.clear();
+      //   console.log(deleteItem);
+      //   console.log(getItem2);
+
+      var arrayOfObject = [
+        {
+          name: "hammad",
+          edu: "bscs"
+        },
+        {
+          name: "arsalan",
+          edu: "bscs"
+        }
+      ];
+
+      //   console.log(arrayOfObject);
+      //   console.log(JSON.stringify(arrayOfObject));
+
+      localStorage.setItem("userData", JSON.stringify(arrayOfObject));
+      var json1 = localStorage.getItem("userData");
+      console.log(JSON.parse(json1));
+
+      //    localStorage.setItem('userData',);
+    </script>
+  </body>
+</html>

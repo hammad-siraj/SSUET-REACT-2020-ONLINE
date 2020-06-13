@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+//switch statements
+ var grades = "z"
+
+
+switch(grades){
+    case "A" : { console.log("excellent")
+    break;
+    }
+    case "B" :{console.log("good")
+    break;
+    }
+    case "C" :{console.log("average")
+    break;
+    }
+    case "D" : {console.log("bad")
+    break;
+    }
+   default: console.log("your grade is not valid")
+
+}
+
+
+
+
+//block scope
+
+
+let global = "hello";
+
+
+if(true){
+
+let global2 =global+"2";
+
+console.log(global2)
+
+ if(true){
+   console.log(global)
+ }
+}
+
+// console.log(global)
+
+
+//function
+// where you have to write the multiple lines of code again and again here comes the function to help 
+
+//function declaration
+greet();
+function greet(){
+console.log("hello user")
+}
+
+//expression function
+// greetUser();
+const greetUser = function(){
+    console.log("hello expression function")
+}
+
+//argument and parameter
+
+function greetClient(user){
+  console.log(`hello ${user}`)
+}
+greetClient("student 1");
+
+
+function mult(n,n2,n3=4){
+   console.log(n*n2*n3)
+}
+
+mult(2,3)
+
+
+function  mult2(a){
+return a*10;
+// console.log("mult2")
+}
+
+const result =mult2(5);
+console.log(result)
+
+
+//Arrow function
+
+
+let fatArrowxyz = (param,param2)=>{
+console.log(param,param2)
+}
+
+fatArrowxyz("string","string2");
+
+
+ let fatArrowxyz2 = param =>param
+
+fatArrowxyz2("string");
+
+
+
+
+function higherOrderFunction(func){
+ console.log("higer order function")
+ func();
+}
+
+higherOrderFunction(callback);
+
+function callback (){
+console.log("callback")
+}
+
+function A(){
+   setTimeout(()=>{
+    console.log("1")
+   },1000)
+}
+A();
+console.log("2")
+
+//forEach for arrays
+
+let arr1 = [4,5,6,7,8,9,10];
+
+ arr1.forEach((values)=>{
+   console.log(values)
+ })
+
+
+
+
+</script>    
+</body>
+</html>
+

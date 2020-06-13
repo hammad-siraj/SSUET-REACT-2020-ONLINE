@@ -1,0 +1,86 @@
+                                 DOM 
+
+           INTERACTING WITH BROWSER : 
+                          heirarchy.
+
+ADD , REMOVE AND UPDATE CONTENT FROM WEB-PAGE.
+ADD STYLE TO THE ELEMENTS.
+EFFECTS LIKE POP UP ,TOGGLE.
+
+QuerySelector:
+gets the first element and ignore the rest from the dom you mentioned in the method.
+
+QuerySelectorAll:
+gets all the element in a list mentioned in a method.
+
+
+Document.GetElementById:
+
+gets an element by id on a page.
+
+
+Document.getElementByClass:
+gets multiple elements from page in a html collection form.
+Note: we cant use any loop method to it.
+
+Document.getElementByTagName:
+gets multiple elements by tag name.
+
+Adding and changing content:
+
+innerText: //property
+innerHtml: //property
+
+Getting and Setting attribute:
+
+getAttribute ("attributeName"); //method
+
+setAttribute("attributeName",changeValue); //method 
+note if the attribute not exist they include the attribute to that element.
+
+Applying css through style property:
+fontSize
+
+
+Adding and Removing classes:
+classList, //property 
+add, //method
+remove, //method
+toggle //method
+
+ex:add specific classes to element.
+
+parent sibbling and children:
+children:
+parentElement:
+nextSibbling:
+previousSibbling
+
+ex:add classes to children through forEach.
+
+Events:
+addEventListner( "click",callback);
+cl,todo list and get an individual item,line-through the item.
+
+creating and removing element:
+
+eventListeners
+copy
+wheel
+mousemove
+keyup
+
+
+
+
+regex
+e.preventDefault();
+form validation
+
+filter 
+map
+find
+reduce
+spread operator
+
+if it is true ? "found":"not found"
