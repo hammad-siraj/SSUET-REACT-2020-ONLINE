@@ -12,9 +12,18 @@
 //add cdns of react , react dom and babel in index.html.(root file)
 
 //PARENT COMPONENT
+
+function xyz(){
+  return 'b'
+///100000000 lines it should not work , because a function always return one thing.
+  return 'a'
+}//a
+ ///b
 const App = () => {
   return (
     <div>
+    <h2>helli</h2>
+
       <NavBar />
       <div>
         <h1>hellow world</h1>
@@ -24,6 +33,7 @@ const App = () => {
         <h1>hellow world</h1>
       </div>
       <Footer />
+
     </div>
   );
 };
@@ -44,6 +54,15 @@ const Footer = () => {
     </div>
   );
 };
+
+
+const Content =()=>{
+  <div>
+<div style={{backgroundColor: #FFFFFF}}>
+<img src={'img/1.png'}/>
+</div>
+  </div>
+}
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
