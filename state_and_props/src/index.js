@@ -4,10 +4,10 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 // import { App2 } from "./App";
 import App from "./App"; // you can import default component with any names
-
+import Todo from "./todo";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Todo />
   </React.StrictMode>,
   document.getElementById("root")
 );
