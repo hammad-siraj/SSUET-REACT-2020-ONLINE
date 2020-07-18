@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/header";
-
 // function App() {
 //   return (
 //     <div className="App">
@@ -71,6 +70,7 @@ class App extends React.Component {
 
     return (
       <div>
+        <Header />
         <h1>{this.state.name}</h1>
         <h1>{this.state.age}</h1>
         <h1>{this.state.standard}</h1>
